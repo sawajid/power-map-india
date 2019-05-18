@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/power-map-india/static/css/main.54626779.chunk.css",
-    "main.js": "/power-map-india/static/js/main.25618572.chunk.js",
-    "main.js.map": "/power-map-india/static/js/main.25618572.chunk.js.map",
+    "main.css": "/power-map-india/static/css/main.7abd8095.chunk.css",
+    "main.js": "/power-map-india/static/js/main.4443145f.chunk.js",
+    "main.js.map": "/power-map-india/static/js/main.4443145f.chunk.js.map",
     "runtime~main.js": "/power-map-india/static/js/runtime~main.4aba2544.js",
     "runtime~main.js.map": "/power-map-india/static/js/runtime~main.4aba2544.js.map",
-    "static/js/2.06a660f9.chunk.js": "/power-map-india/static/js/2.06a660f9.chunk.js",
-    "static/js/2.06a660f9.chunk.js.map": "/power-map-india/static/js/2.06a660f9.chunk.js.map",
+    "static/js/2.5e52a00c.chunk.js": "/power-map-india/static/js/2.5e52a00c.chunk.js",
+    "static/js/2.5e52a00c.chunk.js.map": "/power-map-india/static/js/2.5e52a00c.chunk.js.map",
     "index.html": "/power-map-india/index.html",
-    "precache-manifest.b6d123135d07d71213f1e8f6c31de251.js": "/power-map-india/precache-manifest.b6d123135d07d71213f1e8f6c31de251.js",
+    "precache-manifest.9ee0e34d2f9dccaae35474a3278130cb.js": "/power-map-india/precache-manifest.9ee0e34d2f9dccaae35474a3278130cb.js",
     "service-worker.js": "/power-map-india/service-worker.js",
-    "static/css/main.54626779.chunk.css.map": "/power-map-india/static/css/main.54626779.chunk.css.map"
+    "static/css/main.7abd8095.chunk.css.map": "/power-map-india/static/css/main.7abd8095.chunk.css.map"
   }
 }
