@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df31a6bad2cfd7007bb21206b6293bf9",
+    "revision": "a6640a4fab8cc28ec19c8014998471fd",
     "url": "/power-map-india/index.html"
   },
   {
-    "revision": "6be4bd809574b4c16931",
+    "revision": "01cbb51f5b4e98aa03d5",
     "url": "/power-map-india/static/css/main.7abd8095.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/power-map-india/static/js/2.5e52a00c.chunk.js"
   },
   {
-    "revision": "6be4bd809574b4c16931",
-    "url": "/power-map-india/static/js/main.4443145f.chunk.js"
+    "revision": "01cbb51f5b4e98aa03d5",
+    "url": "/power-map-india/static/js/main.488f7194.chunk.js"
   },
   {
     "revision": "0285a1bb26cd0ccfdf15",
