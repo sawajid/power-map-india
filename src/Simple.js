@@ -3,6 +3,7 @@ import { latLngBounds } from 'leaflet'
 import { Map, TileLayer } from 'react-leaflet'
 import MyMarkersList from './MyMarkersList'
 import markerData from './json/power_india.json'
+import stringHash from 'string-hash'
 
 export default class Simple extends Component {
   constructor(props) {
@@ -14,24 +15,24 @@ export default class Simple extends Component {
     };
   }
 
-  handleChangeValue = e => this.setState({ mapBounds: e.target.value });
-
   componentDidMount() {
-    let mb = [];
-    markerData.forEach((messageObj) => {
-      mb.push(window.L.latLng(messageObj.lat, messageObj.lng))
+    let mb = []
+    let stations = []
+    markerData.forEach((station) => {
+      station["key"] = stringHash(station.station_name)
+      stations.push(station)
+      mb.push(window.L.latLng(station.lat, station.lng))
     });
-    const bounds = latLngBounds(mb);
+    const bounds = latLngBounds(mb)
     this.setState({
-      markerList: markerData,
+      markerList: stations,
       mapBounds: bounds
     });
   }
 
   render() {
-
     return (
-      <Map center={[20.5937, 78.9629]} zoom={5} fitBounds={this.state.mapBounds}>
+      <Map center={[20.5937, 78.9629]} zoom={6} fitBounds={this.state.mapBounds}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
