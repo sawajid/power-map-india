@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/power-map-india/precache-manifest.11023487e648f70f96d3b53c70149df0.js"
+  "/power-map-india/precache-manifest.dd6e4c2427b49c2649be9c25bdafaf90.js"
 );
 
 self.addEventListener('message', (event) => {
