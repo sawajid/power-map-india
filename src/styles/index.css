@@ -199,7 +199,7 @@ figure {
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font: normal normal normal 1rem/1.6 'Ubuntu', sans-serif;
+	font: normal normal normal 1rem/1.6 'Roboto', sans-serif;
 	font-size: 1rem;
 }
 
@@ -232,7 +232,7 @@ h4,
 h5 {
 	margin: 1.5rem 0;
 	font-weight: 600;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.2;
 	color: #404040;
 }
@@ -581,7 +581,7 @@ button,
 	background: #0366ee;
 	color: #ffffff;
 	font-weight: 600;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	text-transform: none;
 	padding: .75rem 1.25rem;
@@ -894,4 +894,4 @@ caption {
   =============== */
 /* @import '~handsontable/dist/handsontable.full.css'; */
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');

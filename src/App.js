@@ -1,16 +1,20 @@
 import React from 'react'
 import Simple from './Simple'
 import ErrorBound from './ErrorBound'
-import Container from 'react-bootstrap/Container'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import { PlantTypeProvider } from "./PlantTypeContext"
 
 const App = () => {
-  return <Container>
-    <h4>Power Stations in India (Hydel, Nuclear, Thermal)</h4>
-    <ErrorBound>
-      <Simple />
-    </ErrorBound>
-  </Container>
+  return <PlantTypeProvider>
+    <CssBaseline />
+    <Container maxWidth="lg">
+      <ErrorBound>
+        <h4>Power Stations in India (Hydel, Nuclear, Thermal)</h4>
+        <Simple />
+      </ErrorBound>
+    </Container>
+  </PlantTypeProvider >
 }
 
 export default App

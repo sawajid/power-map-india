@@ -33,27 +33,28 @@ const dieselIcon = new L.Icon({
 })
 
 const MyPopupMarker = (props) => {
-  if (props.station_name.includes('HPS'))
+  if (props.station_name.includes(' HPS'))
     return <Marker position={[props.lat, props.lng]} icon={hydelIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
-  else if (props.station_name.includes('TPS') || props.station_name.includes('TPP'))
+  else if (props.station_name.includes(' TPS') || props.station_name.includes(' TPP')
+    || props.station_name.includes(' STPS'))
     return <Marker position={[props.lat, props.lng]} icon={thermalIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
-  else if (props.station_name.includes('A.P.S'))
+  else if (props.station_name.includes(' A.P.S'))
     return <Marker position={[props.lat, props.lng]} icon={nuclearIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
-  else if (props.station_name.includes('CCPP'))
+  else if (props.station_name.includes(' CCPP'))
     return <Marker position={[props.lat, props.lng]} icon={cppIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
-  else if (props.station_name.includes('GT'))
+  else if (props.station_name.includes(' GT'))
     return <Marker position={[props.lat, props.lng]} icon={gasIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
-  else if (props.station_name.includes('DG'))
+  else if (props.station_name.includes(' DG'))
     return <Marker position={[props.lat, props.lng]} icon={dieselIcon}>
       <Popup>{props.station_name + ' | ' + props.total_capacity + ' MW | ' + props.region + ' | ' + props.state}</Popup>
     </Marker>
