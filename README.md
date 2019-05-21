@@ -1,6 +1,6 @@
 This page is created in React using Leaflet & OpenStreetMap.
 
-React Hooks used `useState`, `useContext`, `useEfffect`
+React Hooks used `useState`, `useContext`, `useEffect`
 
 ## ToDo
 1. ~~Add Distinct Markers for each type of Plant~~
