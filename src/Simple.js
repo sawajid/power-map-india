@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment, useContext } from 'react'
 import { latLngBounds } from 'leaflet'
-import { Map, TileLayer } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 import MyMarkersList from './MyMarkersList'
 import markerData from './json/power_india.json'
 import stringHash from 'string-hash'
@@ -41,13 +41,13 @@ const Simple = () => {
   return (
     <Fragment>
       <RadioBar />
-      <Map center={[20.5937, 78.9629]} zoom={6} fitBounds={mapBounds}>
+      <MapContainer center={[20.5937, 78.9629]} zoom={6} bounds={mapBounds}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <MyMarkersList markers={markerList} />
-      </Map>
+      </MapContainer>
     </Fragment>
   )
 }
